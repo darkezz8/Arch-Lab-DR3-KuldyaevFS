@@ -62,6 +62,7 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
 .chapter { padding: 72px 0; border-bottom: 1px solid var(--rule); }
 .kicker { font-family: var(--mono); color: var(--stamp); text-transform: uppercase; letter-spacing: .08em; font-size: 14px; margin-bottom: 8px; }
 .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.cols > *, .labgrid > * { min-width: 0; }   /* длинные строки кода не раздвигают колонки */
 .big { color: var(--stamp); white-space: nowrap; }
 .q { font-family: var(--serif); font-style: italic; font-size: 24px; color: var(--stamp); }
 .verdict { background: var(--paper-2); border-left: 4px solid var(--stamp); padding: 14px 18px; margin-top: 22px; }
